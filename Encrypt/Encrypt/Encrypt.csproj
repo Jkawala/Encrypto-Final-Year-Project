@@ -35,11 +35,14 @@
     <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NationalInstruments.DAQmx, Version=23.3.40.49311, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=x86" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,70 +56,102 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Decrypt.cs">
+    <Compile Include="Program.cs" />
+    <Compile Include="Ui\Decrypt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Decrypt.Designer.cs">
+    <Compile Include="Ui\Decrypt.Designer.cs">
       <DependentUpon>Decrypt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Encrypt.cs">
+    <Compile Include="Ui\Encrypt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Encrypt.Designer.cs">
+    <Compile Include="Ui\Encrypt.Designer.cs">
       <DependentUpon>Encrypt.cs</DependentUpon>
     </Compile>
-    <Compile Include="FullScan.cs">
+    <Compile Include="Ui\FullScan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FullScan.Designer.cs">
+    <Compile Include="Ui\FullScan.Designer.cs">
       <DependentUpon>FullScan.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoadingScreen.cs">
+    <Compile Include="Ui\HashCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadingScreen.Designer.cs">
+    <Compile Include="Ui\HashCalculator.Designer.cs">
+      <DependentUpon>HashCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\HashChanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\HashChanger.Designer.cs">
+      <DependentUpon>HashChanger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\LoadingScreen.Designer.cs">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Ui\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Ui\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Engine\EngineOptions.cs" />
-    <Compile Include="Model\Engine\SearchEngine.cs" />
-    <Compile Include="Model\Engine\SearchResult.cs" />
-    <Compile Include="Options.cs">
+    <Compile Include="Ui\MyComputer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Options.Designer.cs">
+    <Compile Include="Ui\MyComputer.Designer.cs">
+      <DependentUpon>MyComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\NetworkAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\NetworkAnalysis.Designer.cs">
+      <DependentUpon>NetworkAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\Options.Designer.cs">
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tools.cs">
+    <Compile Include="Ui\SearchSpecific.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tools.Designer.cs">
-      <DependentUpon>Tools.cs</DependentUpon>
+    <Compile Include="Ui\SearchSpecific.Designer.cs">
+      <DependentUpon>SearchSpecific.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Decrypt.resx">
+    <EmbeddedResource Include="Ui\Decrypt.resx">
       <DependentUpon>Decrypt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Encrypt.resx">
+    <EmbeddedResource Include="Ui\Encrypt.resx">
       <DependentUpon>Encrypt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FullScan.resx">
+    <EmbeddedResource Include="Ui\FullScan.resx">
       <DependentUpon>FullScan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoadingScreen.resx">
+    <EmbeddedResource Include="Ui\HashCalculator.resx">
+      <DependentUpon>HashCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\HashChanger.resx">
+      <DependentUpon>HashChanger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\LoadingScreen.resx">
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Ui\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Options.resx">
+    <EmbeddedResource Include="Ui\MyComputer.resx">
+      <DependentUpon>MyComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\NetworkAnalysis.resx">
+      <DependentUpon>NetworkAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\Options.resx">
       <DependentUpon>Options.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -124,9 +159,21 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tools.resx">
-      <DependentUpon>Tools.cs</DependentUpon>
+    <EmbeddedResource Include="Ui\SearchSpecific.resx">
+      <DependentUpon>SearchSpecific.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Decrypt.datasource" />
+    <None Include="Properties\DataSources\Encrypt.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Encrypt.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Encrypt.Ui.MyComputer.datasource" />
+    <None Include="Properties\DataSources\Encrypt.Ui.SearchSpecific.datasource" />
+    <None Include="Properties\DataSources\FullScan.datasource" />
+    <None Include="Properties\DataSources\LoadingScreen.datasource" />
+    <None Include="Properties\DataSources\Main.datasource" />
+    <None Include="Properties\DataSources\Options.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SpecificSearch.datasource" />
+    <None Include="Properties\DataSources\Tools.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,7 +190,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-globe-16.png" />
@@ -178,6 +227,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-lock.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\browse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Clipboard_01.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Clipboard_01.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Clipboard_01.svg%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
