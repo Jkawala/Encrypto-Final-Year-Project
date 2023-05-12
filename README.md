@@ -7,18 +7,24 @@ This application is built with versatility in mind, supporting a variety of file
 
 This project is open source and contributions are welcome. I encourage you to explore and experiment with our application and hope it proves to be a useful tool in your forensic investigations.
 
-![image description](images/image_filename.png)
 
-To run the application, you can provide instructions on how to download and install the necessary dependencies and how to execute the program. You can add this information to the README file as well. For example:
+To run the application, you install the necessary windows dependencies and how to execute the program. 
 
-To run this application, you will need to have Python 3 installed on your machine. Clone this repository to your local machine and install the required dependencies by running the following command:
+The .NET Framework: C# code is compiled and executed using the .NET Framework. You will need to install the appropriate version of the .NET Framework on your computer, which can be done through the Visual Studio Installer.installed on your machine. Clone this repository to your local machine and install the required dependencies by running the following command:
 
-pip install -r requirements.txt
+pen the version control system that you used to clone the repository (e.g., Git, SVN, Mercurial).
 
-Once the dependencies are installed, you can run the application by executing the main file:
+Navigate to the directory on your local machine where you cloned the repository.
 
-css
+Open Visual Studio 2019.
 
-python main.py
+From the main menu, select "File" -> "Open" -> "Project/Solution".
+
+In the "Open Project" dialog box, navigate to the directory where you cloned the repository.
+
+Select the solution file (.sln) for the project you want to open.
+
+Click "Open" to open the project in Visual Studio.
+
 
 This will start the application and you can begin using its various features for digital forensic investigations.
