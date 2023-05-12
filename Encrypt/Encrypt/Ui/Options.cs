@@ -225,6 +225,42 @@ namespace Encrypt
             groupBox2.Visible = false;
             groupBox4.Visible = false;
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+           "A digital forensic tool that analyses different aspects of a systems.\n" +
+           "If there is an error with the repository please visit the link below\n" +
+           "GitHub: https://github.com/wholetthedogsoutside/ \n\n");
+        }
+
+        private void sendFeedbackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string feedback = Microsoft.VisualBasic.Interaction.InputBox("Please enter your feedback:", "Feedback", "");
+            if (feedback != "")
+            {
+                MessageBox.Show("Thank you for your feedback!");
+                // You can add code here to send the feedback to a database or an email address.
+            }
+            else
+            {
+                MessageBox.Show("Failed to get Feedback form", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void productInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+          "Created by James Kawala\n" +
+          "A digital forensic tool that analyses different aspects of a systems.\n" +
+          "GitHub: https://github.com/wholetthedogsoutside/ \n\n" +
+          "This project was done through research and online resources.");
+        }
     }
     }
 

@@ -56,6 +56,7 @@
             this.btnRename = new System.Windows.Forms.Button();
             this.btnNewFile = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +79,8 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menToolStripMenuItem});
+            this.menToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.menuToolStripMenuItem.Text = "File ";
@@ -87,7 +89,7 @@
             // 
             this.menToolStripMenuItem.Image = global::Encrypt.Properties.Resources.icons8_home_office;
             this.menToolStripMenuItem.Name = "menToolStripMenuItem";
-            this.menToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+            this.menToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.menToolStripMenuItem.Text = "Menu";
             this.menToolStripMenuItem.Click += new System.EventHandler(this.menToolStripMenuItem_Click);
             // 
@@ -116,20 +118,23 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.helpToolStripMenuItem.Text = "Help ";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
-            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
+            this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
             // 
             // productInfoToolStripMenuItem
             // 
             this.productInfoToolStripMenuItem.Name = "productInfoToolStripMenuItem";
-            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.productInfoToolStripMenuItem.Text = "Product Info";
+            this.productInfoToolStripMenuItem.Click += new System.EventHandler(this.productInfoToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -152,12 +157,12 @@
             // 
             // selectSearchFirButton
             // 
+            this.selectSearchFirButton.Image = global::Encrypt.Properties.Resources.browse;
             this.selectSearchFirButton.Location = new System.Drawing.Point(638, 64);
             this.selectSearchFirButton.Margin = new System.Windows.Forms.Padding(4);
             this.selectSearchFirButton.Name = "selectSearchFirButton";
             this.selectSearchFirButton.Size = new System.Drawing.Size(96, 26);
             this.selectSearchFirButton.TabIndex = 15;
-            this.selectSearchFirButton.Text = ".....";
             this.selectSearchFirButton.UseVisualStyleBackColor = true;
             this.selectSearchFirButton.Click += new System.EventHandler(this.selectSearchFirButton_Click);
             // 
@@ -303,11 +308,19 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::Encrypt.Properties.Resources.exit;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // SearchSpecific
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(175)))), ((int)(((byte)(204)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1255, 538);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnNewFile);
@@ -364,5 +377,6 @@
         private System.Windows.Forms.Button btnRename;
         private System.Windows.Forms.Button btnNewFile;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

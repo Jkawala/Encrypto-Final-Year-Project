@@ -288,7 +288,12 @@ namespace Encrypt.Ui
 
         private void menToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Show the FullScan form and hide the current form
+            this.Hide();
 
+            Main f2 = new Main();
+
+            f2.Show();
         }
     }
 }

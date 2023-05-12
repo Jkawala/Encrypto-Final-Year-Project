@@ -32,9 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HashChanger));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuCopyRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuExportToCSV = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuOpenFile = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fullscreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,9 +65,6 @@
             this.oldMD5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.newMD5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contextMenuCopyRow = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuExportToCSV = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuOpenFile = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelAction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMD5)).BeginInit();
@@ -101,6 +102,27 @@
             this.newSessionToolStripMenuItem.Name = "newSessionToolStripMenuItem";
             this.newSessionToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.newSessionToolStripMenuItem.Text = "Menu";
+            // 
+            // contextMenuCopyRow
+            // 
+            this.contextMenuCopyRow.Name = "contextMenuCopyRow";
+            this.contextMenuCopyRow.Size = new System.Drawing.Size(216, 26);
+            this.contextMenuCopyRow.Text = "Copy Selected Row ";
+            this.contextMenuCopyRow.Click += new System.EventHandler(this.contextMenuCopyRow_Click);
+            // 
+            // contextMenuExportToCSV
+            // 
+            this.contextMenuExportToCSV.Name = "contextMenuExportToCSV";
+            this.contextMenuExportToCSV.Size = new System.Drawing.Size(216, 26);
+            this.contextMenuExportToCSV.Text = "Export All to .CSV";
+            this.contextMenuExportToCSV.Click += new System.EventHandler(this.contextMenuExportToCSV_Click);
+            // 
+            // contextMenuOpenFile
+            // 
+            this.contextMenuOpenFile.Name = "contextMenuOpenFile";
+            this.contextMenuOpenFile.Size = new System.Drawing.Size(216, 26);
+            this.contextMenuOpenFile.Text = "Open File";
+            this.contextMenuOpenFile.Click += new System.EventHandler(this.openFileToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -374,36 +396,16 @@
             this.status.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.status.Width = 75;
             // 
-            // contextMenuCopyRow
-            // 
-            this.contextMenuCopyRow.Name = "contextMenuCopyRow";
-            this.contextMenuCopyRow.Size = new System.Drawing.Size(216, 26);
-            this.contextMenuCopyRow.Text = "Copy Selected Row ";
-            this.contextMenuCopyRow.Click += new System.EventHandler(this.contextMenuCopyRow_Click);
-            // 
-            // contextMenuExportToCSV
-            // 
-            this.contextMenuExportToCSV.Name = "contextMenuExportToCSV";
-            this.contextMenuExportToCSV.Size = new System.Drawing.Size(216, 26);
-            this.contextMenuExportToCSV.Text = "Export All to .CSV";
-            this.contextMenuExportToCSV.Click += new System.EventHandler(this.contextMenuExportToCSV_Click);
-            // 
-            // contextMenuOpenFile
-            // 
-            this.contextMenuOpenFile.Name = "contextMenuOpenFile";
-            this.contextMenuOpenFile.Size = new System.Drawing.Size(216, 26);
-            this.contextMenuOpenFile.Text = "Open File";
-            this.contextMenuOpenFile.Click += new System.EventHandler(this.openFileToolStripMenuItem_Click);
-            // 
             // HashChanger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(175)))), ((int)(((byte)(204)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1255, 538);
             this.Controls.Add(this.panelAction);
             this.Controls.Add(this.dgvMD5);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HashChanger";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HashChanger";

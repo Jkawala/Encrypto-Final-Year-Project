@@ -245,5 +245,20 @@
   <ItemGroup>
     <None Include="Resources\1200px-Clipboard_01.svg%281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1573824213560.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dot-net-original-wordmark.256x246.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github.256x244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -85,51 +85,51 @@
             this.shutdownToolStripMenuItem,
             this.rebootToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.menuToolStripMenuItem.Text = "File ";
             // 
             // menToolStripMenuItem
             // 
             this.menToolStripMenuItem.Image = global::Encrypt.Properties.Resources.icons8_home_office;
             this.menToolStripMenuItem.Name = "menToolStripMenuItem";
-            this.menToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.menToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.menToolStripMenuItem.Text = "Menu";
             this.menToolStripMenuItem.Click += new System.EventHandler(this.menToolStripMenuItem_Click);
             // 
             // openNetworkFolderToolStripMenuItem
             // 
             this.openNetworkFolderToolStripMenuItem.Name = "openNetworkFolderToolStripMenuItem";
-            this.openNetworkFolderToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.openNetworkFolderToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.openNetworkFolderToolStripMenuItem.Text = "Open Network Folder";
             // 
             // showInfoToolStripMenuItem
             // 
             this.showInfoToolStripMenuItem.Name = "showInfoToolStripMenuItem";
-            this.showInfoToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.showInfoToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.showInfoToolStripMenuItem.Text = "Show Info";
             // 
             // shutdownToolStripMenuItem
             // 
             this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.shutdownToolStripMenuItem.Text = "Shutdown";
             // 
             // rebootToolStripMenuItem
             // 
             this.rebootToolStripMenuItem.Name = "rebootToolStripMenuItem";
-            this.rebootToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.rebootToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.rebootToolStripMenuItem.Text = "Reboot";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.viewToolStripMenuItem.Text = "View ";
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
             // aboutToolStripMenuItem
@@ -139,25 +139,25 @@
             this.sendFeedbackToolStripMenuItem,
             this.productInfoToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.aboutToolStripMenuItem.Text = "About ";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.helpToolStripMenuItem.Text = "Help ";
             // 
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
-            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.sendFeedbackToolStripMenuItem.Text = "Send Feedback";
             // 
             // productInfoToolStripMenuItem
             // 
             this.productInfoToolStripMenuItem.Name = "productInfoToolStripMenuItem";
-            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.productInfoToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.productInfoToolStripMenuItem.Text = "Product Info";
             // 
             // groupBox1
@@ -224,7 +224,7 @@
             // 
             // cmdStop
             // 
-            this.cmdStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(143)))), ((int)(((byte)(200)))));
+            this.cmdStop.BackColor = System.Drawing.Color.White;
             this.cmdStop.Enabled = false;
             this.cmdStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.cmdStop.Location = new System.Drawing.Point(957, 116);
@@ -237,7 +237,7 @@
             // 
             // cmdScan
             // 
-            this.cmdScan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(143)))), ((int)(((byte)(200)))));
+            this.cmdScan.BackColor = System.Drawing.Color.White;
             this.cmdScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.cmdScan.Location = new System.Drawing.Point(851, 116);
             this.cmdScan.Margin = new System.Windows.Forms.Padding(4);
@@ -310,7 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(175)))), ((int)(((byte)(204)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1255, 538);
             this.Controls.Add(this.listVAddr);
             this.Controls.Add(this.groupBox1);
