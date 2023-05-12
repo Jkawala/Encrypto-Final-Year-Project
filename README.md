@@ -6,3 +6,19 @@ The file scanner is capable of scanning and recovering deleted files, while the 
 This application is built with versatility in mind, supporting a variety of file formats and can be used on a wide range of devices. It is designed to be user-friendly with intuitive interfaces that make it easy to use for digital forensic investigations.
 
 This project is open source and contributions are welcome. I encourage you to explore and experiment with our application and hope it proves to be a useful tool in your forensic investigations.
+
+![image description](images/image_filename.png)
+
+To run the application, you can provide instructions on how to download and install the necessary dependencies and how to execute the program. You can add this information to the README file as well. For example:
+
+To run this application, you will need to have Python 3 installed on your machine. Clone this repository to your local machine and install the required dependencies by running the following command:
+
+pip install -r requirements.txt
+
+Once the dependencies are installed, you can run the application by executing the main file:
+
+css
+
+python main.py
+
+This will start the application and you can begin using its various features for digital forensic investigations.
